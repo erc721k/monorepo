@@ -1,0 +1,98 @@
+{
+  "name": "@erc721k/deployments",
+  "author": "Kames Geraghty",
+  "module": "dist/deployments.esm.js",
+  "version": "0.0.0-beta.0",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "engines": {
+    "node": ">=10"
+  },
+  "scripts": {
+    "build": "tsdx build",
+    "test": "tsdx test --passWithNoTests",
+    "lint": "tsdx lint",
+    "prepare": "tsdx build",
+    "size": "size-limit",
+    "analyze": "size-limit --why",
+    "clean": "rm -rf node_modules/",
+    "deploy": "hardhat deploy --write true",
+    "deploy:mainnet": "hardhat deploy --write true --network mainnet",
+    "deploy:testnet": "hardhat deploy --write true --network testnet",
+    "deploy:polygon:mainnet": "hardhat deploy --write true --network polygonMainnet",
+    "deploy:polygon:testnet": "hardhat deploy --write true --network polygonTestnet",
+    "deploy:fork": "DEPLOY=wolf FORK_ENABLED=true hardhat deploy --write true --network hardhat",
+    "chain": "hardhat node --network hardhat",
+    "chain:deployment": "hardhat node --network hardhat"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "tsdx lint"
+    }
+  },
+  "prettier": {
+    "printWidth": 80,
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  },
+  "size-limit": [
+    {
+      "path": "dist/deployments.cjs.production.min.js",
+      "limit": "10 KB"
+    },
+    {
+      "path": "dist/deployments.esm.js",
+      "limit": "10 KB"
+    }
+  ],
+  "devDependencies": {
+    "@babel/core": "7.18.5",
+    "dotenv": "^16.0.1",
+    "@ethersproject/abi": "5.6.1",
+    "@nomiclabs/hardhat-ethers": "2.0.4",
+    "@nomiclabs/hardhat-etherscan": "3.0.0",
+    "@nomiclabs/hardhat-waffle": "2.0.2",
+    "@openzeppelin/contracts": "^4.6.0",
+    "@size-limit/preset-small-lib": "^7.0.8",
+    "@typechain/ethers-v5": "9.0.0",
+    "@typechain/hardhat": "4.0.0",
+    "@types/chai": "4.3.0",
+    "@types/debug": "4.1.7",
+    "@types/mocha": "9.1.0",
+    "@types/node": "^18.0.0",
+    "base64-sol": "1.1.0",
+    "chai": "4.3.6",
+    "chalk": "5.0.0",
+    "debug": "4.3.3",
+    "ethereum-waffle": "3.4.0",
+    "ethers": "5.6.0",
+    "hardhat": "2.10.1",
+    "hardhat-abi-exporter": "2.8.0",
+    "hardhat-dependency-compiler": "1.1.2",
+    "hardhat-deploy": "0.10.5",
+    "hardhat-deploy-ethers": "0.3.0-beta.13",
+    "hardhat-ethers": "1.0.1",
+    "hardhat-gas-reporter": "1.0.7",
+    "hardhat-log-remover": "2.0.2",
+    "size-limit": "^7.0.8",
+    "solc": "0.8.15",
+    "solidity-docgen": "0.5.16",
+    "ts-generator": "0.1.1",
+    "ts-node": "^10.8.1",
+    "tsdx": "^0.14.1",
+    "tslib": "^2.4.0",
+    "typechain": "7.0.0",
+    "typescript": "^4.7.4"
+  },
+  "dependencies": {
+    "@erc721k/core-sol": "0.0.0-beta.0",
+    "@erc721k/periphery-sol": "0.0.0-beta.0",
+    "@erc721k/streams-sol": "0.0.0-beta.0"
+  }
+}

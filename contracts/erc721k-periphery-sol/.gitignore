@@ -1,0 +1,24 @@
+/.yarn/*
+!/.yarn/releases
+!/.yarn/plugins
+!/.yarn/sdks
+
+# Swap the comments on the following lines if you don't wish to use zero-installs
+# Documentation here: https://yarnpkg.com/features/zero-installs
+#!/.yarn/cache
+/.pnp.*
+
+.envrc
+
+# deployments/localhost
+
+abis
+artifacts
+cache
+docs
+node_modules
+types
+
+# Solidity Coverage
+coverage
+coverage.json

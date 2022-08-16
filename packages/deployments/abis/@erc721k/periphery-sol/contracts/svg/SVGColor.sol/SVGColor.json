@@ -1,0 +1,228 @@
+[
+  {
+    "inputs": [],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes",
+        "name": "_colors",
+        "type": "bytes"
+      },
+      {
+        "internalType": "bytes",
+        "name": "_id",
+        "type": "bytes"
+      },
+      {
+        "internalType": "bytes",
+        "name": "_customAttributes",
+        "type": "bytes"
+      }
+    ],
+    "name": "autoLinearGradient",
+    "outputs": [
+      {
+        "internalType": "bytes",
+        "name": "",
+        "type": "bytes"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes",
+        "name": "_coordinates",
+        "type": "bytes"
+      },
+      {
+        "internalType": "bytes",
+        "name": "_colors",
+        "type": "bytes"
+      },
+      {
+        "internalType": "bytes",
+        "name": "_id",
+        "type": "bytes"
+      },
+      {
+        "internalType": "bytes",
+        "name": "_customAttributes",
+        "type": "bytes"
+      }
+    ],
+    "name": "autoLinearGradient",
+    "outputs": [
+      {
+        "internalType": "bytes",
+        "name": "",
+        "type": "bytes"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes",
+        "name": "_data",
+        "type": "bytes"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_offset",
+        "type": "uint256"
+      }
+    ],
+    "name": "byte2uint8",
+    "outputs": [
+      {
+        "internalType": "uint8",
+        "name": "",
+        "type": "uint8"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "",
+        "type": "string"
+      }
+    ],
+    "name": "colors",
+    "outputs": [
+      {
+        "internalType": "bytes",
+        "name": "",
+        "type": "bytes"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "_colorName",
+        "type": "string"
+      },
+      {
+        "internalType": "uint8",
+        "name": "_alpha",
+        "type": "uint8"
+      }
+    ],
+    "name": "getColor",
+    "outputs": [
+      {
+        "internalType": "bytes",
+        "name": "",
+        "type": "bytes"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "_colorName",
+        "type": "string"
+      }
+    ],
+    "name": "getColor",
+    "outputs": [
+      {
+        "internalType": "bytes",
+        "name": "",
+        "type": "bytes"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "_colorName",
+        "type": "string"
+      }
+    ],
+    "name": "getRgba",
+    "outputs": [
+      {
+        "internalType": "string",
+        "name": "",
+        "type": "string"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes",
+        "name": "_lg",
+        "type": "bytes"
+      },
+      {
+        "internalType": "bytes",
+        "name": "_id",
+        "type": "bytes"
+      },
+      {
+        "internalType": "bytes",
+        "name": "_customAttributes",
+        "type": "bytes"
+      }
+    ],
+    "name": "linearGradient",
+    "outputs": [
+      {
+        "internalType": "bytes",
+        "name": "",
+        "type": "bytes"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes",
+        "name": "_rgba",
+        "type": "bytes"
+      },
+      {
+        "internalType": "uint256",
+        "name": "offset",
+        "type": "uint256"
+      }
+    ],
+    "name": "toRgba",
+    "outputs": [
+      {
+        "internalType": "bytes",
+        "name": "",
+        "type": "bytes"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  }
+]

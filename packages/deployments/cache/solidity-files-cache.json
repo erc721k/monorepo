@@ -1,0 +1,1751 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "/Users/kames/workspace/erc721k/labs/packages/deployments/contracts/hardhat-dependency-compiler/@erc721k/core-sol/contracts/ERC721K.sol": {
+      "lastModificationDate": 1660594843777,
+      "contentHash": "42509002250fd803aafda4446bb3fb10",
+      "sourceName": "contracts/hardhat-dependency-compiler/@erc721k/core-sol/contracts/ERC721K.sol",
+      "solcConfig": {
+        "version": "0.8.15",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@erc721k/core-sol/contracts/ERC721K.sol"
+      ],
+      "versionPragmas": [
+        ">0.0.0"
+      ],
+      "artifacts": []
+    },
+    "/Users/kames/workspace/erc721k/labs/contracts/erc721k-core-sol/contracts/ERC721K.sol": {
+      "lastModificationDate": 1660588267844,
+      "contentHash": "c9852b5a159d1c1f37ebaeb348b1350e",
+      "sourceName": "@erc721k/core-sol/contracts/ERC721K.sol",
+      "solcConfig": {
+        "version": "0.8.15",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/access/Ownable.sol",
+        "@openzeppelin/contracts/token/ERC721/ERC721.sol",
+        "./ERC721Storage.sol"
+      ],
+      "versionPragmas": [
+        "0.8.15"
+      ],
+      "artifacts": [
+        "ERC721K"
+      ]
+    },
+    "/Users/kames/workspace/erc721k/labs/node_modules/.pnpm/@openzeppelin+contracts@4.7.3/node_modules/@openzeppelin/contracts/access/Ownable.sol": {
+      "lastModificationDate": 1660581096768,
+      "contentHash": "e436cea06129be2c73cda4b1acc848b5",
+      "sourceName": "@openzeppelin/contracts/access/Ownable.sol",
+      "solcConfig": {
+        "version": "0.8.15",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../utils/Context.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Ownable"
+      ]
+    },
+    "/Users/kames/workspace/erc721k/labs/node_modules/.pnpm/@openzeppelin+contracts@4.7.3/node_modules/@openzeppelin/contracts/token/ERC721/ERC721.sol": {
+      "lastModificationDate": 1660581096759,
+      "contentHash": "79ff1a7eb801a525aa315fb7a679eede",
+      "sourceName": "@openzeppelin/contracts/token/ERC721/ERC721.sol",
+      "solcConfig": {
+        "version": "0.8.15",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./IERC721.sol",
+        "./IERC721Receiver.sol",
+        "./extensions/IERC721Metadata.sol",
+        "../../utils/Address.sol",
+        "../../utils/Context.sol",
+        "../../utils/Strings.sol",
+        "../../utils/introspection/ERC165.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC721"
+      ]
+    },
+    "/Users/kames/workspace/erc721k/labs/contracts/erc721k-core-sol/contracts/ERC721Storage.sol": {
+      "lastModificationDate": 1660588008282,
+      "contentHash": "7aa9f4b3ecf91858eb359daafdbfad20",
+      "sourceName": "@erc721k/core-sol/contracts/ERC721Storage.sol",
+      "solcConfig": {
+        "version": "0.8.15",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "base64-sol/base64.sol",
+        "@openzeppelin/contracts/access/Ownable.sol",
+        "./interfaces/IERC721KImage.sol",
+        "./interfaces/IERC721KTraits.sol",
+        "@openzeppelin/contracts/utils/Strings.sol"
+      ],
+      "versionPragmas": [
+        "0.8.15"
+      ],
+      "artifacts": [
+        "ERC721Storage"
+      ]
+    },
+    "/Users/kames/workspace/erc721k/labs/node_modules/.pnpm/@openzeppelin+contracts@4.7.3/node_modules/@openzeppelin/contracts/utils/Context.sol": {
+      "lastModificationDate": 1660581096754,
+      "contentHash": "5f2c5c4b6af2dd4551027144797bc8be",
+      "sourceName": "@openzeppelin/contracts/utils/Context.sol",
+      "solcConfig": {
+        "version": "0.8.15",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Context"
+      ]
+    },
+    "/Users/kames/workspace/erc721k/labs/node_modules/.pnpm/@openzeppelin+contracts@4.7.3/node_modules/@openzeppelin/contracts/token/ERC721/IERC721.sol": {
+      "lastModificationDate": 1660581096764,
+      "contentHash": "ec99d946db3685a3630554aa6055bd7f",
+      "sourceName": "@openzeppelin/contracts/token/ERC721/IERC721.sol",
+      "solcConfig": {
+        "version": "0.8.15",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../../utils/introspection/IERC165.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC721"
+      ]
+    },
+    "/Users/kames/workspace/erc721k/labs/node_modules/.pnpm/@openzeppelin+contracts@4.7.3/node_modules/@openzeppelin/contracts/token/ERC721/IERC721Receiver.sol": {
+      "lastModificationDate": 1660581096765,
+      "contentHash": "c22d4395e33763de693fd440c6fd10e1",
+      "sourceName": "@openzeppelin/contracts/token/ERC721/IERC721Receiver.sol",
+      "solcConfig": {
+        "version": "0.8.15",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC721Receiver"
+      ]
+    },
+    "/Users/kames/workspace/erc721k/labs/node_modules/.pnpm/@openzeppelin+contracts@4.7.3/node_modules/@openzeppelin/contracts/token/ERC721/extensions/IERC721Metadata.sol": {
+      "lastModificationDate": 1660581096765,
+      "contentHash": "efbc0d15b80a74e34dbe8da0f3e879bb",
+      "sourceName": "@openzeppelin/contracts/token/ERC721/extensions/IERC721Metadata.sol",
+      "solcConfig": {
+        "version": "0.8.15",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../IERC721.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC721Metadata"
+      ]
+    },
+    "/Users/kames/workspace/erc721k/labs/node_modules/.pnpm/@openzeppelin+contracts@4.7.3/node_modules/@openzeppelin/contracts/utils/Address.sol": {
+      "lastModificationDate": 1660581096753,
+      "contentHash": "c476b3895a94798b88a4bb97399e6dfe",
+      "sourceName": "@openzeppelin/contracts/utils/Address.sol",
+      "solcConfig": {
+        "version": "0.8.15",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.1"
+      ],
+      "artifacts": [
+        "Address"
+      ]
+    },
+    "/Users/kames/workspace/erc721k/labs/node_modules/.pnpm/@openzeppelin+contracts@4.7.3/node_modules/@openzeppelin/contracts/utils/Strings.sol": {
+      "lastModificationDate": 1660581096770,
+      "contentHash": "cf46906c4035f51639a22265066a9e78",
+      "sourceName": "@openzeppelin/contracts/utils/Strings.sol",
+      "solcConfig": {
+        "version": "0.8.15",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Strings"
+      ]
+    },
+    "/Users/kames/workspace/erc721k/labs/node_modules/.pnpm/@openzeppelin+contracts@4.7.3/node_modules/@openzeppelin/contracts/utils/introspection/ERC165.sol": {
+      "lastModificationDate": 1660581096757,
+      "contentHash": "0e7db055ce108f9da7bb6686a00287c0",
+      "sourceName": "@openzeppelin/contracts/utils/introspection/ERC165.sol",
+      "solcConfig": {
+        "version": "0.8.15",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./IERC165.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC165"
+      ]
+    },
+    "/Users/kames/workspace/erc721k/labs/node_modules/.pnpm/@openzeppelin+contracts@4.7.3/node_modules/@openzeppelin/contracts/utils/introspection/IERC165.sol": {
+      "lastModificationDate": 1660581096763,
+      "contentHash": "03e6768535ac4da0e9756f1d8a4a018a",
+      "sourceName": "@openzeppelin/contracts/utils/introspection/IERC165.sol",
+      "solcConfig": {
+        "version": "0.8.15",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC165"
+      ]
+    },
+    "/Users/kames/workspace/erc721k/labs/node_modules/.pnpm/base64-sol@1.1.0/node_modules/base64-sol/base64.sol": {
+      "lastModificationDate": 1660581092954,
+      "contentHash": "0d54cb6a748ddde95d92ed7802c9248d",
+      "sourceName": "base64-sol/base64.sol",
+      "solcConfig": {
+        "version": "0.8.15",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.0"
+      ],
+      "artifacts": [
+        "Base64"
+      ]
+    },
+    "/Users/kames/workspace/erc721k/labs/contracts/erc721k-core-sol/contracts/interfaces/IERC721KImage.sol": {
+      "lastModificationDate": 1660588007698,
+      "contentHash": "d8f72d0d646302132c6505999fee9e80",
+      "sourceName": "@erc721k/core-sol/contracts/interfaces/IERC721KImage.sol",
+      "solcConfig": {
+        "version": "0.8.15",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.8.15"
+      ],
+      "artifacts": [
+        "IERC721KImage"
+      ]
+    },
+    "/Users/kames/workspace/erc721k/labs/contracts/erc721k-core-sol/contracts/interfaces/IERC721KTraits.sol": {
+      "lastModificationDate": 1660588007003,
+      "contentHash": "970d1f7f0fcdb0b2cde7e6ce8851b132",
+      "sourceName": "@erc721k/core-sol/contracts/interfaces/IERC721KTraits.sol",
+      "solcConfig": {
+        "version": "0.8.15",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.8.15"
+      ],
+      "artifacts": [
+        "IERC721KTraits"
+      ]
+    },
+    "/Users/kames/workspace/erc721k/labs/packages/deployments/contracts/hardhat-dependency-compiler/@erc721k/core-sol/contracts/ERC721Storage.sol": {
+      "lastModificationDate": 1660594843777,
+      "contentHash": "5b9abf3ca0d8d9d35625fe4ce690617b",
+      "sourceName": "contracts/hardhat-dependency-compiler/@erc721k/core-sol/contracts/ERC721Storage.sol",
+      "solcConfig": {
+        "version": "0.8.15",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@erc721k/core-sol/contracts/ERC721Storage.sol"
+      ],
+      "versionPragmas": [
+        ">0.0.0"
+      ],
+      "artifacts": []
+    },
+    "/Users/kames/workspace/erc721k/labs/contracts/erc721k-periphery-sol/contracts/svg/SVGColor.sol": {
+      "lastModificationDate": 1660580364668,
+      "contentHash": "9d8665d8399daa8610ea1bd9b852a66e",
+      "sourceName": "@erc721k/periphery-sol/contracts/svg/SVGColor.sol",
+      "solcConfig": {
+        "version": "0.8.15",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/utils/Strings.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.13"
+      ],
+      "artifacts": [
+        "SVGColor"
+      ]
+    },
+    "/Users/kames/workspace/erc721k/labs/contracts/erc721k-periphery-sol/contracts/svg/SVGLibrary.sol": {
+      "lastModificationDate": 1660580364666,
+      "contentHash": "cab271c386c03ba3027add546bf38a38",
+      "sourceName": "@erc721k/periphery-sol/contracts/svg/SVGLibrary.sol",
+      "solcConfig": {
+        "version": "0.8.15",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/access/Ownable.sol",
+        "./svg.sol",
+        "./svgUtils.sol",
+        "./SVGColor.sol"
+      ],
+      "versionPragmas": [
+        "0.8.15"
+      ],
+      "artifacts": [
+        "SVGLibrary"
+      ]
+    },
+    "/Users/kames/workspace/erc721k/labs/contracts/erc721k-periphery-sol/contracts/svg/svg.sol": {
+      "lastModificationDate": 1660580364667,
+      "contentHash": "e1e882da894319f643aa98be0cdea5f9",
+      "sourceName": "@erc721k/periphery-sol/contracts/svg/svg.sol",
+      "solcConfig": {
+        "version": "0.8.15",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/utils/Strings.sol",
+        "./svgUtils.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.13"
+      ],
+      "artifacts": [
+        "svg"
+      ]
+    },
+    "/Users/kames/workspace/erc721k/labs/contracts/erc721k-periphery-sol/contracts/svg/svgUtils.sol": {
+      "lastModificationDate": 1660580364666,
+      "contentHash": "93a28ca5cd36b4b0145680c20e95205c",
+      "sourceName": "@erc721k/periphery-sol/contracts/svg/svgUtils.sol",
+      "solcConfig": {
+        "version": "0.8.15",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/utils/Strings.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.13"
+      ],
+      "artifacts": [
+        "svgUtils"
+      ]
+    },
+    "/Users/kames/workspace/erc721k/labs/packages/deployments/contracts/hardhat-dependency-compiler/@erc721k/periphery-sol/contracts/svg/svgUtils.sol": {
+      "lastModificationDate": 1660594843778,
+      "contentHash": "94c660907687f0461f8b17c0d61f5107",
+      "sourceName": "contracts/hardhat-dependency-compiler/@erc721k/periphery-sol/contracts/svg/svgUtils.sol",
+      "solcConfig": {
+        "version": "0.8.15",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@erc721k/periphery-sol/contracts/svg/svgUtils.sol"
+      ],
+      "versionPragmas": [
+        ">0.0.0"
+      ],
+      "artifacts": []
+    },
+    "/Users/kames/workspace/erc721k/labs/packages/deployments/contracts/hardhat-dependency-compiler/@erc721k/periphery-sol/contracts/svg/svg.sol": {
+      "lastModificationDate": 1660594843778,
+      "contentHash": "8286a6adafc951b97cfbd62e8af45b94",
+      "sourceName": "contracts/hardhat-dependency-compiler/@erc721k/periphery-sol/contracts/svg/svg.sol",
+      "solcConfig": {
+        "version": "0.8.15",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@erc721k/periphery-sol/contracts/svg/svg.sol"
+      ],
+      "versionPragmas": [
+        ">0.0.0"
+      ],
+      "artifacts": []
+    },
+    "/Users/kames/workspace/erc721k/labs/contracts/erc721k-periphery-sol/contracts/svg/SVGRegistry.sol": {
+      "lastModificationDate": 1660580364665,
+      "contentHash": "ce66f44c13cc5e63c1d003b413d5d3bb",
+      "sourceName": "@erc721k/periphery-sol/contracts/svg/SVGRegistry.sol",
+      "solcConfig": {
+        "version": "0.8.15",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "hardhat/console.sol",
+        "@openzeppelin/contracts/access/Ownable.sol",
+        "../interfaces/ISVGModule.sol"
+      ],
+      "versionPragmas": [
+        "0.8.15"
+      ],
+      "artifacts": [
+        "SVGRegistry"
+      ]
+    },
+    "/Users/kames/workspace/erc721k/labs/node_modules/.pnpm/hardhat@2.10.1_6oasmw356qmm23djlsjgkwvrtm/node_modules/hardhat/console.sol": {
+      "lastModificationDate": 1660581094852,
+      "contentHash": "cc4777addd464ea56fa35b1c45df0591",
+      "sourceName": "hardhat/console.sol",
+      "solcConfig": {
+        "version": "0.8.15",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.4.22 <0.9.0"
+      ],
+      "artifacts": [
+        "console"
+      ]
+    },
+    "/Users/kames/workspace/erc721k/labs/contracts/erc721k-periphery-sol/contracts/interfaces/ISVGModule.sol": {
+      "lastModificationDate": 1660580364670,
+      "contentHash": "b63f472e14d0d0bf1514fcdb795c0740",
+      "sourceName": "@erc721k/periphery-sol/contracts/interfaces/ISVGModule.sol",
+      "solcConfig": {
+        "version": "0.8.15",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.8.15"
+      ],
+      "artifacts": [
+        "ISVGModule"
+      ]
+    },
+    "/Users/kames/workspace/erc721k/labs/packages/deployments/contracts/hardhat-dependency-compiler/@erc721k/periphery-sol/contracts/svg/SVGRegistry.sol": {
+      "lastModificationDate": 1660594843778,
+      "contentHash": "ab9adb224fba9c04758d154d4fd62731",
+      "sourceName": "contracts/hardhat-dependency-compiler/@erc721k/periphery-sol/contracts/svg/SVGRegistry.sol",
+      "solcConfig": {
+        "version": "0.8.15",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@erc721k/periphery-sol/contracts/svg/SVGRegistry.sol"
+      ],
+      "versionPragmas": [
+        ">0.0.0"
+      ],
+      "artifacts": []
+    },
+    "/Users/kames/workspace/erc721k/labs/packages/deployments/contracts/hardhat-dependency-compiler/@erc721k/periphery-sol/contracts/svg/SVGLibrary.sol": {
+      "lastModificationDate": 1660594843778,
+      "contentHash": "212b3fafd46fb1463fa8fd456582976c",
+      "sourceName": "contracts/hardhat-dependency-compiler/@erc721k/periphery-sol/contracts/svg/SVGLibrary.sol",
+      "solcConfig": {
+        "version": "0.8.15",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@erc721k/periphery-sol/contracts/svg/SVGLibrary.sol"
+      ],
+      "versionPragmas": [
+        ">0.0.0"
+      ],
+      "artifacts": []
+    },
+    "/Users/kames/workspace/erc721k/labs/packages/deployments/contracts/hardhat-dependency-compiler/@erc721k/periphery-sol/contracts/svg/SVGColor.sol": {
+      "lastModificationDate": 1660594843778,
+      "contentHash": "ad3729ad5e9ee3411ecb5b6906d7f288",
+      "sourceName": "contracts/hardhat-dependency-compiler/@erc721k/periphery-sol/contracts/svg/SVGColor.sol",
+      "solcConfig": {
+        "version": "0.8.15",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@erc721k/periphery-sol/contracts/svg/SVGColor.sol"
+      ],
+      "versionPragmas": [
+        ">0.0.0"
+      ],
+      "artifacts": []
+    },
+    "/Users/kames/workspace/erc721k/labs/contracts/erc721k-core-sol/contracts/examples/Example.sol": {
+      "lastModificationDate": 1660593994818,
+      "contentHash": "5dbf3f7abafb1734d0fcdcfdfed9736c",
+      "sourceName": "@erc721k/core-sol/contracts/examples/Example.sol",
+      "solcConfig": {
+        "version": "0.8.15",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "hardhat/console.sol",
+        "../ERC721K.sol",
+        "../ERC721Storage.sol",
+        "./ExampleRender.sol"
+      ],
+      "versionPragmas": [
+        "0.8.15"
+      ],
+      "artifacts": [
+        "Example"
+      ]
+    },
+    "/Users/kames/workspace/erc721k/labs/contracts/erc721k-core-sol/contracts/examples/ExampleRender.sol": {
+      "lastModificationDate": 1660594828487,
+      "contentHash": "b76f9b1ab84c18e9aa878966fd4c97cb",
+      "sourceName": "@erc721k/core-sol/contracts/examples/ExampleRender.sol",
+      "solcConfig": {
+        "version": "0.8.15",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "hardhat/console.sol",
+        "@openzeppelin/contracts/access/Ownable.sol",
+        "@erc721k/periphery-sol/contracts/svg/svg.sol",
+        "@erc721k/periphery-sol/contracts/svg/SVGLibrary.sol",
+        "@erc721k/periphery-sol/contracts/svg/SVGRegistry.sol",
+        "base64-sol/base64.sol"
+      ],
+      "versionPragmas": [
+        "0.8.15"
+      ],
+      "artifacts": [
+        "ExampleRender"
+      ]
+    },
+    "/Users/kames/workspace/erc721k/labs/contracts/erc721k-core-sol/contracts/examples/ExampleStorage.sol": {
+      "lastModificationDate": 1660588621366,
+      "contentHash": "e2347758647dfe40498a19c3aef28950",
+      "sourceName": "@erc721k/core-sol/contracts/examples/ExampleStorage.sol",
+      "solcConfig": {
+        "version": "0.8.15",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/utils/Strings.sol",
+        "../ERC721Storage.sol"
+      ],
+      "versionPragmas": [
+        "0.8.15"
+      ],
+      "artifacts": [
+        "ExampleStorage"
+      ]
+    },
+    "/Users/kames/workspace/erc721k/labs/contracts/erc721k-core-sol/contracts/examples/ExampleTraits.sol": {
+      "lastModificationDate": 1660588848759,
+      "contentHash": "0866db0a08d5af229480ff401f9c3767",
+      "sourceName": "@erc721k/core-sol/contracts/examples/ExampleTraits.sol",
+      "solcConfig": {
+        "version": "0.8.15",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/access/Ownable.sol",
+        "@openzeppelin/contracts/utils/Strings.sol",
+        "../interfaces/IStream.sol",
+        "../interfaces/IERC721KTraits.sol"
+      ],
+      "versionPragmas": [
+        "0.8.15"
+      ],
+      "artifacts": [
+        "ExampleTraits"
+      ]
+    },
+    "/Users/kames/workspace/erc721k/labs/contracts/erc721k-core-sol/contracts/interfaces/IStream.sol": {
+      "lastModificationDate": 1660588635430,
+      "contentHash": "0b337f947e50391375a046b305baaa9a",
+      "sourceName": "@erc721k/core-sol/contracts/interfaces/IStream.sol",
+      "solcConfig": {
+        "version": "0.8.15",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.8.15"
+      ],
+      "artifacts": [
+        "IStream"
+      ]
+    },
+    "/Users/kames/workspace/erc721k/labs/contracts/erc721k-core-sol/contracts/examples/ExampleSvgModule.sol": {
+      "lastModificationDate": 1660593716852,
+      "contentHash": "29f00d002925c3724ec42d102714f8e5",
+      "sourceName": "@erc721k/core-sol/contracts/examples/ExampleSvgModule.sol",
+      "solcConfig": {
+        "version": "0.8.15",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "hardhat/console.sol",
+        "@openzeppelin/contracts/access/Ownable.sol",
+        "@erc721k/periphery-sol/contracts/svg/svg.sol",
+        "@erc721k/periphery-sol/contracts/svg/svgUtils.sol",
+        "@erc721k/periphery-sol/contracts/svg/SVGLibrary.sol",
+        "../interfaces/IERC721KImage.sol"
+      ],
+      "versionPragmas": [
+        "0.8.15"
+      ],
+      "artifacts": [
+        "ExampleSvgModule"
+      ]
+    },
+    "/Users/kames/workspace/erc721k/labs/packages/deployments/contracts/hardhat-dependency-compiler/@erc721k/core-sol/contracts/examples/ExampleSvgModule.sol": {
+      "lastModificationDate": 1660594843777,
+      "contentHash": "f2364b5a2fb3dfb147a490ce656c4e96",
+      "sourceName": "contracts/hardhat-dependency-compiler/@erc721k/core-sol/contracts/examples/ExampleSvgModule.sol",
+      "solcConfig": {
+        "version": "0.8.15",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@erc721k/core-sol/contracts/examples/ExampleSvgModule.sol"
+      ],
+      "versionPragmas": [
+        ">0.0.0"
+      ],
+      "artifacts": []
+    },
+    "/Users/kames/workspace/erc721k/labs/packages/deployments/contracts/hardhat-dependency-compiler/@erc721k/core-sol/contracts/examples/ExampleTraits.sol": {
+      "lastModificationDate": 1660594843778,
+      "contentHash": "e39017b287743d4f839d64bf06b03c09",
+      "sourceName": "contracts/hardhat-dependency-compiler/@erc721k/core-sol/contracts/examples/ExampleTraits.sol",
+      "solcConfig": {
+        "version": "0.8.15",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@erc721k/core-sol/contracts/examples/ExampleTraits.sol"
+      ],
+      "versionPragmas": [
+        ">0.0.0"
+      ],
+      "artifacts": []
+    },
+    "/Users/kames/workspace/erc721k/labs/packages/deployments/contracts/hardhat-dependency-compiler/@erc721k/core-sol/contracts/examples/ExampleStorage.sol": {
+      "lastModificationDate": 1660594843777,
+      "contentHash": "a0f285ec00da1e0f06f0d22a039edd48",
+      "sourceName": "contracts/hardhat-dependency-compiler/@erc721k/core-sol/contracts/examples/ExampleStorage.sol",
+      "solcConfig": {
+        "version": "0.8.15",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@erc721k/core-sol/contracts/examples/ExampleStorage.sol"
+      ],
+      "versionPragmas": [
+        ">0.0.0"
+      ],
+      "artifacts": []
+    },
+    "/Users/kames/workspace/erc721k/labs/packages/deployments/contracts/hardhat-dependency-compiler/@erc721k/core-sol/contracts/examples/Example.sol": {
+      "lastModificationDate": 1660594843777,
+      "contentHash": "d0c04141440fc6987d80f58e942ec568",
+      "sourceName": "contracts/hardhat-dependency-compiler/@erc721k/core-sol/contracts/examples/Example.sol",
+      "solcConfig": {
+        "version": "0.8.15",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@erc721k/core-sol/contracts/examples/Example.sol"
+      ],
+      "versionPragmas": [
+        ">0.0.0"
+      ],
+      "artifacts": []
+    }
+  }
+}

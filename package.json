@@ -1,0 +1,47 @@
+{
+  "name": "turbo-eth",
+  "version": "0.0.0-beta.0",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "contracts/*",
+    "packages/*",
+    "external/*"
+  ],
+  "pnpm": {
+    "peerDependencyRules": {
+      "allowedVersions": {
+        "@rainbow-me/rainbowkit": "0.4.6",
+        "react": "18.2.0",
+        "react-dom": "18.2.0",
+        "wagmi": "0.6.3"
+      }
+    }
+  },
+  "scripts": {
+    "build": "turbo run build",
+    "build:prd": "turbo run build:prd",
+    "compile": "turbo run compile",
+    "dev": "turbo run dev --parallel",
+    "lint": "turbo run lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "chain": "turbo run chain",
+    "lab": "turbo run lab",
+    "lab:fork": "turbo run lab:fork",
+    "clean": "turbo run clean"
+  },
+  "dependencies": {
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  },
+  "devDependencies": {
+    "prettier": "^2.6.2",
+    "turbo": "latest"
+  },
+  "engines": {
+    "npm": ">=7.0.0",
+    "node": ">=16.0.0"
+  },
+  "packageManager": "pnpm@7.1.8"
+}

@@ -1,0 +1,37 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_colors_",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "package",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "bytes",
+        "name": "input",
+        "type": "bytes"
+      }
+    ],
+    "name": "execute",
+    "outputs": [
+      {
+        "internalType": "string",
+        "name": "data",
+        "type": "string"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

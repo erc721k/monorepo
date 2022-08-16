@@ -1,0 +1,63 @@
+{
+  "$schema": "https://turborepo.org/schema.json",
+  "globalDependencies": [".env.*", "$ALCHEMY_KEY"],
+  "pipeline": {
+    "chain": {
+      "dependsOn": ["^chain"],
+      "outputs": [""],
+      "inputs": ["contracts/**/*.sol"]
+    },
+    "chain:fork": {
+      "dependsOn": ["^chain:fork"],
+      "outputs": [""],
+      "inputs": ["contracts/**/*.sol"]
+    },
+    "compile": {
+      "dependsOn": ["^compile"],
+      "outputs": [""],
+      "inputs": ["contracts/**/*.sol"]
+    },
+    "chain:deployment": {
+      "dependsOn": ["^chain:deployment"],
+      "outputs": [""],
+      "inputs": ["contracts/**/*.sol"]
+    },
+    "dev": {
+      "outputs": [""]
+    },
+    "dev:fork": {
+      "outputs": [""]
+    },
+    "lint": {
+      "outputs": [""]
+    },
+    "watch": {
+      "dependsOn": ["^watch"]
+    },
+    "build": {
+      "dependsOn": ["^build"]
+    },
+    "build:prd": {
+      "dependsOn": ["^build:prd"],
+      "outputs": [".next", "out"]
+    },
+    "clean": {
+      "dependsOn": ["^clean"]
+    },
+    "lab": {
+      "dependsOn": [
+        "@erc721k/deployments#chain:deployment",
+        "^watch",
+        "@erc721k/demo-react-app#dev"
+      ],
+      "outputs": [""]
+    },
+    "lab:fork": {
+      "dependsOn": [
+        "^watch",
+        "@erc721k/deployments#chain:fork",
+        "@erc721k/demo-react-app#dev:fork"
+      ]
+    }
+  }
+}
