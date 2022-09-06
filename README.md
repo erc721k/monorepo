@@ -98,4 +98,4 @@ The TurboETH build system uses [Turborepo](https://turborepo.org/) and pNPM; a h
 
 <hr />
 
-Copyright 2022 [Kames Geraghty](https://kames.me)
+Copyright 2022 [Friends of Pooly Inc](https://friendsofpooly.com)
