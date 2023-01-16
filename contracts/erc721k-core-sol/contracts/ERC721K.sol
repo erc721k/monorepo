@@ -1,15 +1,15 @@
 //SPDX-License-Identifier: MIT
 pragma solidity 0.8.15;
 
-import { Ownable } from "@openzeppelin/contracts/access/Ownable.sol";
-import { ERC721 } from "@openzeppelin/contracts/token/ERC721/ERC721.sol";
+import { ERC721 } from "@turbo-eth/solbase-sol/src/tokens/ERC721/ERC721.sol";
+import { OwnedRoles } from "@turbo-eth/solbase-sol/src/auth/OwnedRoles.sol";
 import { ERC721Storage } from "./ERC721Storage.sol";
 
 /**
  * @title ERC721K
  * @author Kames Geraghty
  */
-abstract contract ERC721K is ERC721, Ownable {
+abstract contract ERC721K is ERC721, OwnedRoles {
   /// @notice ID counter for ERC721 tokens
   uint256 internal _idCounter;
 
@@ -30,6 +30,7 @@ abstract contract ERC721K is ERC721, Ownable {
     address _erc721Storage_
   ) ERC721(name_, symbol_) {
     _erc721Storage = _erc721Storage_;
+    _initializeOwner(msg.sender);
   }
 
   /* ===================================================================================== */

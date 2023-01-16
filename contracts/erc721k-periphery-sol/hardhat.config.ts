@@ -27,7 +27,9 @@ const config: HardhatUserConfig = {
     target: 'ethers-v5',
   },
   dependencyCompiler: {
-    paths: [],
+    paths: [
+      '@turbo-eth/solbase-sol/src/utils/Base64.sol',
+    ],
   },
   etherscan: {
     apiKey: process.env.ETHERSCAN_API_KEY,

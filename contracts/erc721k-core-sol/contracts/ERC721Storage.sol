@@ -1,19 +1,18 @@
 // SPDX-License-Identifier: GPL-3.0
 pragma solidity 0.8.15;
 
-import { Base64 } from "base64-sol/base64.sol";
-import { Ownable } from "@openzeppelin/contracts/access/Ownable.sol";
+import { Base64 } from "@turbo-eth/solbase-sol/src/utils/Base64.sol";
+import { OwnedRoles } from "@turbo-eth/solbase-sol/src/auth/OwnedRoles.sol";
 import { IERC721KImage } from "./interfaces/IERC721KImage.sol";
 import { IERC721KTraits } from "./interfaces/IERC721KTraits.sol";
-import { Strings } from "@openzeppelin/contracts/utils/Strings.sol";
 
 /**
  * @title ERC721Storage
  * @author Kames Geraghty
  */
-abstract contract ERC721Storage is Ownable {
-  address internal _svgRender;
-  address internal _traitsFetch;
+abstract contract ERC721Storage is OwnedRoles {
+  address internal svgRenderInstance;
+  address internal traitsFetchInstance;
   ContractURI internal _contractURI;
 
   struct ContractURI {
@@ -32,13 +31,14 @@ abstract contract ERC721Storage is Ownable {
   event ContractURIUpdated(ContractURI contractURI);
 
   constructor(
-    address _svgRender_,
-    address _traitsFetch_,
+    address svgRender_Instance,
+    address traitsFetchInstance_,
     ContractURI memory _contractURI_
-  ) {
-    _svgRender = _svgRender_;
-    _traitsFetch = _traitsFetch_;
+  ) OwnedRoles() {
+    svgRenderInstance = svgRender_Instance;
+    traitsFetchInstance = traitsFetchInstance_;
     _contractURI = _contractURI_;
+    _initializeOwner(msg.sender);
   }
 
   /* ===================================================================================== */
@@ -52,12 +52,12 @@ abstract contract ERC721Storage is Ownable {
   /* ===================================================================================== */
   /* External Functions                                                                    */
   /* ===================================================================================== */
-  function getSvgRender() external view returns (address) {
-    return _svgRender;
+  function getERC721KRender() external view returns (address) {
+    return svgRenderInstance;
   }
 
-  function getTraitsFetch() external view returns (address) {
-    return _traitsFetch;
+  function getERC72KTraits() external view returns (address) {
+    return traitsFetchInstance;
   }
 
   function getContractDescription() external view returns (ContractURI memory) {
@@ -65,16 +65,16 @@ abstract contract ERC721Storage is Ownable {
   }
 
   function render(bytes memory input) external view returns (string memory) {
-    return IERC721KImage(_svgRender).render(input);
+    return IERC721KImage(svgRenderInstance).render(input);
   }
 
   function constructTokenURI(
     uint256 tokenId,
     bytes memory input0,
     bytes memory input1
-  ) external view returns (string memory uri) {
-    string memory image_ = IERC721KImage(_svgRender).render(input0);
-    string memory traits_ = IERC721KTraits(_traitsFetch).fetch(input1);
+  ) external view virtual returns (string memory uri) {
+    string memory image_ = IERC721KImage(svgRenderInstance).render(input0);
+    string memory traits_ = IERC721KTraits(traitsFetchInstance).fetch(input1);
     return
       string(
         abi.encodePacked(
@@ -105,7 +105,7 @@ abstract contract ERC721Storage is Ownable {
       );
   }
 
-  function constructContractURI() external view returns (string memory uri) {
+  function constructContractURI() external view virtual returns (string memory uri) {
     return
       string(
         abi.encodePacked(
@@ -146,12 +146,12 @@ abstract contract ERC721Storage is Ownable {
   }
 
   function setSvgRender(address svgRender) external onlyOwner {
-    _svgRender = svgRender;
+    svgRenderInstance = svgRender;
     emit SvgRenderUpdated(svgRender);
   }
 
   function setTraitsFetch(address traitsFetch) external onlyOwner {
-    _traitsFetch = traitsFetch;
+    traitsFetchInstance = traitsFetch;
     emit TraitsFetchUpdated(traitsFetch);
   }
 
