@@ -11,7 +11,7 @@ contract SVGRegistry is Ownable {
 
   function fetch(bytes32 widgetId, bytes memory input) external view returns (string memory) {
     if (_modules[widgetId] != address(0)) {
-      return ISVGModule(_modules[widgetId]).render(input);
+      return ISVGModule(_modules[widgetId]).decode(input);
     } else {
       return "";
     }
